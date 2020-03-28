@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Share your outings`,
-    description: `An application that lets you create and share your outings`,
-    author: `ghumo.app`,
+    title: `Share your knowledge`,
+    description: `An application that lets you create and share your tutorials`,
+    author: `peepul.app`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

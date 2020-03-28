@@ -7,7 +7,7 @@ import EmailForm from '../components/emailForm'
 import { css } from '@emotion/core'
 import styled from '@emotion/styled'
 import Background from '../images/background.jpg';
-import { PrivacyPolicyPage } from './privacypolicy';
+import {IndexPage } from './index'
 
 const Content = styled.div`
     border: 1px solid #FFD41D;
@@ -55,7 +55,7 @@ const GenCopy = styled.p`
 
 `
 
-const IndexPage = () => (
+const PrivacyPolicyPage = () => (
   <div>
     <Content>
 
@@ -114,12 +114,11 @@ const IndexPage = () => (
               text-align: left;
             }
         `}>
-          Instagram for educators and students.
+          Privacy Policy
           </p>
 
           <GenCopy>
-          Teachers for students. Students for students. No more paywall between a pupil and high quality subject tutorials.
-          Learning can be easy as swiping.
+            The app uses your camera when you record a video and uses your provided details like your user name and photo to display in your profile. No data is shared outside the application.
           </GenCopy>
           <br /><br />
         </div>
@@ -329,10 +328,11 @@ const IndexPage = () => (
         text-align: left;
       }
   `}>
-    © {new Date().getFullYear()} peepul.app  <Link to="/privacypolicy/">Privacy Policy</Link>
+    © {new Date().getFullYear()} peepul.app <Link to="/">Home</Link>
     </footer>
+
   </div>
 
 )
 
-export default IndexPage
+export default PrivacyPolicyPage
