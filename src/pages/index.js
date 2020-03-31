@@ -8,6 +8,7 @@ import { css } from '@emotion/core'
 import styled from '@emotion/styled'
 import Background from '../images/background.jpg';
 import { PrivacyPolicyPage } from './privacypolicy';
+import withLocation from "../components/withLocation"
 
 const Content = styled.div`
     border: 1px solid #FFD41D;
@@ -334,5 +335,4 @@ const IndexPage = () => (
   </div>
 
 )
-
-export default IndexPage
+export default withLocation(IndexPage)
