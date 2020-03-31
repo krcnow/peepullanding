@@ -5,8 +5,10 @@ import withLocation from "./withLocation"
 const CustomQueryStringComponent = ({ search }) => {
   const { custom } = search
   const { url } = "peepul://--/detail/"+{custom}
-  console.log(url)
-  return window.location.replace(url)
+  if (typeof window !== `undefined`) {
+    return window.location.replace(url)
+  }
+    
 }
 
 CustomQueryStringComponent.propTypes = {
