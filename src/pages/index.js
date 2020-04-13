@@ -187,6 +187,7 @@ const IndexPage = () => (
       }
   `}>
     © {new Date().getFullYear()} peepul.app  <Link to="/privacypolicy/">Privacy Policy</Link>
+    <Link to="/support/">Support</Link>
     </footer>
   </div>
 
