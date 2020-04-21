@@ -143,7 +143,7 @@ const IndexPage = () => (
           font-size: 1.8em;
           display: flex;
           flex-direction: row;
-          color: #f5f3f2;
+          color: #FFD41D;
           padding: 26px;
           display: none;
           @media only screen and (min-width: 768px) {
@@ -159,18 +159,30 @@ const IndexPage = () => (
           <source src={mockvideo} type="video/mp4" />
         </video>
         </p>
-      <h1>Sign up today</h1>
-      <GenCopy>
-      Get on the list to try out the app when we go live
-      </GenCopy>
+      <h1>Get your Peepul App today</h1>
+      
       <div css={css`
         width: 100%;
+        display: flex;
+        flex-direction: row;
         @media only screen and (min-width: 768px) {
             width: 30%;
         }
     `}>
-        <EmailForm />
-      
+      <a href="https://apps.apple.com/us/app/peepul/id1504222194?mt=8" 
+      css={css`display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/en-us/badge-lrg.svg?releaseDate=2020-04-14&kind=iossoftware&bubble=ios_apps) 
+            no-repeat;
+            margin-top:3%;
+            width:635px;height:80px;
+            `}>
+      </a>
+      <a href='https://play.google.com/store/apps/details?id=com.untropy.peepul&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+        <img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' css={css`
+        width: 100%;
+        @media only screen and (min-width: 768px) {
+            width: 90%;
+        }
+    `}/></a>
         
       </div>
     </div>
@@ -182,11 +194,14 @@ const IndexPage = () => (
       padding: 20px 7%;
       font-size: 0.8em;
       text-align: center;
+      display: flex;
+      flex-direction: row;
       @media only screen and (min-width: 768px) {
         text-align: left;
       }
   `}>
-    © {new Date().getFullYear()} peepul.app  <Link to="/privacypolicy/">Privacy Policy</Link>
+    © {new Date().getFullYear()} peepul.app  <Link to="/privacypolicy/">Privacy Policy </Link>
+    
     <Link to="/support/">Support</Link>
     </footer>
   </div>
