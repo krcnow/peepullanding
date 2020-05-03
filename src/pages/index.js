@@ -180,11 +180,21 @@ const IndexPage = () => (
         <img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' css={css`
         width: 100%;
         @media only screen and (min-width: 768px) {
-            width: 90%;
+            width: 85%;
         }
     `}/></a>
-        
       </div>
+      <h1>or just scan this code from your phone</h1>
+      <div css={css`
+            width: 30%;
+            @media only screen and (min-width: 768px) {
+              width: 10%;
+
+            }
+        `}>
+          <Image filename="onlink_to_peepul_small.png"/>
+          
+        </div>
     </div>
 
     <footer css={css`
