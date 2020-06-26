@@ -115,7 +115,7 @@ const IndexPage = () => (
               text-align: left;
             }
         `}>
-          Instagram for educators and students.
+          Gamified TikTok style learning for students.
           </p>
 
           <GenCopy>
